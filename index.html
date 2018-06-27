@@ -43,16 +43,19 @@
                 <div class="date">
                     <a>Date</a>
                     <input type="date" id="dt" onchange="handler(event);"/>
+                    <div id="error4">
+                        <a id="msj-error4" class="msj-error"></a>
+                    </div>
                 </div>
                 </div> 
                 <!--radioButton-drink-->
                 <div id="drink">
                 <div class="form-check form-check-inline">
                     <a>Drink? </a>
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" onclick="drink()">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" onclick="drinkYes()">
                     <label class="form-check-label" for="inlineRadio1">Yes</label>
 
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" onclick="drinkNo()" checked>
                     <label class="form-check-label" for="inlineRadio2">No</label>
                 </div>
                 <!-- <div class="form-check form-check-inline">

@@ -22,10 +22,12 @@
 #drink, #smoke, #like{
     margin: 10px auto;
 }
-#error, #error2, #error3{
+#error, #error2, #error3, #error4{
     display: none;
     color: red;
 }
 #drink, #smoke, #hobbies, #like{
     display: none;
 }
+
+
