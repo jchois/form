@@ -1,0 +1,31 @@
+.content{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.label-w{
+    width: 200px;
+}
+.button-sub{
+    width: 50%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+.date{
+    display: flex;
+    flex-direction: column;
+}
+#drink, #smoke, #like{
+    margin: 10px auto;
+}
+#error, #error2, #error3{
+    display: none;
+    color: red;
+}
+#drink, #smoke, #hobbies, #like{
+    display: none;
+}

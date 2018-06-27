@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="content">
+
+            <button type="submit" class="btn btn-primary button-sub" id="button1" onclick="val()">Submit</button>
+            <form>
+              <div class="column">
+                <div class="form-group">
+                    <label for="name-input">First Name*</label>
+                    <input type="text" class="form-control" id="name-input" placeholder="First Name">
+                    <div id="error">
+                        <a id="msj-error" class="msj-error"></a>
+                    </div>
+                    
+                </div>
+                <div class="form-group">
+                    <label for="lname-input">Last Name*</label>
+                    <input type="text" class="form-control" id="lname-input" placeholder="Last Name">
+                    <div id="error2">
+                        <a id="msj-error2" class="msj-error"></a>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email-input">Email</label>
+                    <input type="email" class="form-control" id="email-input" placeholder="email@example.com">
+                    <div id="error3">
+                        <a id="msj-error3" class="msj-error"></a>
+                    </div>
+                </div>
+                <!--Date-->
+                <div class="date">
+                    <a>Date</a>
+                    <input type="date" id="dt" onchange="handler(event);"/>
+                </div>
+                </div> 
+                <!--radioButton-drink-->
+                <div id="drink">
+                <div class="form-check form-check-inline">
+                    <a>Drink? </a>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" onclick="drink()">
+                    <label class="form-check-label" for="inlineRadio1">Yes</label>
+
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">No</label>
+                </div>
+                <!-- <div class="form-check form-check-inline">
+                    
+                </div> -->
+                </div>
+                <!--radioButton-smoke-->
+                <div id="smoke">
+                <div class="form-check form-check-inline">
+                    <a>Smoke? </a>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio3" value="option1">
+                    <label class="form-check-label" for="inlineRadio3">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio4" value="option2">
+                    <label class="form-check-label" for="inlineRadio4">No</label>
+                </div>
+                </div>
+                <!--Hobbies-->
+                <div id="hobbies"> 
+                    <a>Hobbies</a>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Read</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2">Play videogames</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                        <label class="custom-control-label" for="customCheck3">Play soccer</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck4">
+                        <label class="custom-control-label" for="customCheck4">Watch TV</label>
+                    </div>
+                </div>
+                <div id="like"><!--radioButton-->
+                        <div class="form-check form-check-inline"> 
+                            <a>did you like the survey?</a>
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio5" value="option1">
+                            <label class="form-check-label" for="inlineRadio5">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">No</label>
+                        </div>
+                        </div>
+
+
+            </form>
+            <button type="submit" class="btn btn-primary button-sub" onclick="val()">Submit</button>
+
+    </div>
+    
+</body>
+    <script src="js/app.js"></script>
+
+</html>
